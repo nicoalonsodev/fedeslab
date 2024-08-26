@@ -43,7 +43,7 @@ const Header = () => {
           navbar
             ? "header-bg lg:shadow-2xl h-[80px] lg:h-[80px]"
             : "header h-[80px] lg:h-[95px]"
-        } text-gray-300 p-4 z-40 font-lato-300 fixed w-full top-0 transition-all duration-500  ${
+        } text-gray-300 p-4 z-40 hanken-500 fixed w-full top-0 transition-all duration-500  ${
           menuOpen ? "" : "border-b-[1px] border-gray-900"
         }`}
       >
@@ -65,7 +65,7 @@ const Header = () => {
           />
         </div>
         <div
-          className="mx-auto flex items-center justify-between hidden lg:flex poppins-light"
+          className="mx-auto flex items-center justify-between hidden lg:flex hanken-300"
           style={{ maxWidth: "1150px", height: navbar ? "50px" : "70px" }}
         >
           <div className="logo flex items-center space-x-4">
@@ -88,7 +88,7 @@ const Header = () => {
                   currentPage === "/proyectos" ? "active" : "a-h"
                 } ${navbar ? "text-gray-700" : ""}`}
               >
-                Bodyline
+                Fedeslab
               </a>
               <a
                 href="#irene"
@@ -97,7 +97,7 @@ const Header = () => {
                   currentPage === "/sobre-nosotros" ? "active" : "a-h"
                 } ${navbar ? "text-gray-700" : ""}`}
               >
-                Irene
+                Propuesta
               </a>
               <a
                 href="#contact"
@@ -116,7 +116,7 @@ const Header = () => {
                   currentPage === "/novedades" ? "active" : "a-h"
                 } ${navbar ? "text-gray-700" : ""}`}
               >
-                Comunidad
+                Integraciones
               </a>
             </div>
             <div
@@ -128,7 +128,7 @@ const Header = () => {
                 href="#therapys"
                 className=" flex items-center gap-x-2 poppins-regular"
               >
-                Ver todas las terapias <GiThreeLeaves />
+               Blog <GiThreeLeaves />
               </a>
             </div>
           </nav>
