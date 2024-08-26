@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import VideoWistia from "../../components/Video/VideoWistia";
 import { banner } from "../../assets";
+import Integraciones from "../../components/Integraciones/Integraciones";
 // import InstagramSection from "../../components/InstagramSection/InstagramSection";
 // import AboutUs from "../../components/AboutUs/AboutUs";
 // import DescriptionContact from "../../components/DescriptionContact/DescriptionContact";
@@ -29,6 +30,7 @@ const Home = () => {
           <VideoWistia />
         </div>
       </div>
+      <Integraciones />
 
       {/* <AboutUs />
       <AboutIrene />
