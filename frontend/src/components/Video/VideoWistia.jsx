@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 // import Registro from "../Registro/Registro";
-// import AnimatedButton from "../AnimatedButton/AnimatedButton";
+import AnimatedButton from "../AnimatedButton/AnimatedButton";
 // import gif from "../../assets/gifSound.gif";
 import { useLocation } from "react-router-dom";
 import "./Video.css";
@@ -61,7 +61,7 @@ const VideoWistia = ({}) => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center pb-4 ">
+    <div className="w-full h-full flex flex-col items-center justify-center  px-0 lg:px-32">
       <div className="w-full lg:w-2/3 h-full flex flex-col items-center px-1 lg:px-6 py-1 lg:py-4 bg-gray-800 rounded-2xl mb-4 border-gray-800 border-2 relative">
         <div className="aspect-w-16 aspect-h-9 w-full">
           <iframe
@@ -98,9 +98,9 @@ const VideoWistia = ({}) => {
           </div>
         )} */}
       </div>
-      {/* <div className="w-full flex justify-center">
-        {showButton && <AnimatedButton data={dataUser} calendlyPage={calendlyPageUrl} />}
-      </div> */}
+      <div className="w-full flex justify-center">
+         <AnimatedButton  />
+      </div>
       
     </div>
   );
