@@ -35,7 +35,7 @@ const newsData = [
 
 const NewsCards = () => {
   return (
-    <div className="container mx-auto py-10 lg:px-32">
+    <div className="container mx-auto py-10 px-2 lg:px-32">
       <div className="w-full flex flex-col justify-start items-center mb-10">
         <h1 className="hanken-400 text-4xl text-gray-700 text-center lg:text-left">
           Fedeslab{" "}

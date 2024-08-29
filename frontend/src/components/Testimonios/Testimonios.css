@@ -1,17 +1,10 @@
 /* Testimonios.css */
 .testimonial {
-    position: relative;
-    padding: 20px;
-    background-color: #fff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: center;
   }
   
   .quote {
-    font-style: italic;
     position: relative;
-    padding: 0 20px; 
   }
   
   .quote::before,

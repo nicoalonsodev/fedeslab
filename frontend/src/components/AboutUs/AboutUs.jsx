@@ -10,7 +10,7 @@ const AboutUs = () => {
     >
       <div className="max-w-4xl text-center p-6">
         <div className="w-full flex justify-center mb-2">
-        <h1 className="hanken-400 text-4xl text-gray-700 text-center lg:text-left">
+        <h1 className="hanken-500 text-4xl text-gray-700 text-center lg:text-left">
           Acerca de{" "}
           <span className="hanken-700 text-[#5AC758]">Fedeslab</span>
         </h1>

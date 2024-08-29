@@ -141,7 +141,7 @@ const Header = () => {
             animate={{ y: 0 }}
             exit={{ y: -340 }}
             transition={{ duration: 0.7 }}
-            className="fixed top-0 left-0 text-left w-full h-96 px-4 mt-10 bg-[#00314b] text-white poppins-semibold z-20 flex flex-col items-start justify-center space-y-4"
+            className="fixed top-0 left-0 text-left w-full h-96 px-4 mt-10 bg-[#3a8139] text-white poppins-semibold z-20 flex flex-col items-start justify-center space-y-4"
           >
             <a href="/" onClick={() => handleNavClick("/")} className="text-lg">
               Inicio
@@ -178,7 +178,7 @@ const Header = () => {
             <div>
               <a
                 href="/"
-                className="tracking-widest poppins-regular bg-[#ffc702] hover:bg-[#a18c2d] duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 "
+                className="tracking-widest poppins-regular bg-gray-50 hover:bg-gray-800 duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 "
               >
                 SOLICITAR ASESOR <IoIosContacts className="text-3xl" />
               </a>
