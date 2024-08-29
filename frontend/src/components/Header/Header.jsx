@@ -47,13 +47,13 @@ const Header = () => {
           menuOpen ? "" : "border-b-[1px] border-gray-900"
         }`}
       >
-        <div className="mx-auto flex items-center justify-between lg:hidden z-30 ">
+        <div className="mx-auto flex items-center justify-between lg:hidden z-30 px-6 bg-[#3a8139]">
           <div className="logo flex items-center space-x-4">
             <a href="/">
               <img
                 src={navbar ? logo : logo}
                 alt="Logo"
-                style={{ width: "136px" }}
+                style={{ width: "36px" }}
               />
             </a>
           </div>
@@ -61,7 +61,7 @@ const Header = () => {
             onClick={handleMenuToggle}
             className={` ${
               menuOpen ? "rotate-180" : ""
-            } duration-700 text-gray-50 text-4xl inline-block md:hidden cursor-pointer `}
+            } duration-700 text-gray-50 text-4xl inline-block md:hidden cursor-pointer z-30 `}
           />
         </div>
         <div
@@ -141,7 +141,7 @@ const Header = () => {
             animate={{ y: 0 }}
             exit={{ y: -340 }}
             transition={{ duration: 0.7 }}
-            className="fixed top-0 left-0 text-left w-full h-96 px-4 mt-10 bg-[#00314b] text-white poppins-semibold z-20 flex flex-col items-start justify-center space-y-4"
+            className="fixed top-0 left-0 text-left w-full h-96 px-4 mt-10 bg-[#3a8139] text-white poppins-semibold z-20 flex flex-col items-start justify-center space-y-4"
           >
             <a href="/" onClick={() => handleNavClick("/")} className="text-lg">
               Inicio
@@ -178,7 +178,7 @@ const Header = () => {
             <div>
               <a
                 href="/"
-                className="tracking-widest poppins-regular bg-[#ffc702] hover:bg-[#a18c2d] duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 "
+                className="tracking-widest poppins-regular bg-gray-50 hover:bg-gray-800 duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 "
               >
                 SOLICITAR ASESOR <IoIosContacts className="text-3xl" />
               </a>
