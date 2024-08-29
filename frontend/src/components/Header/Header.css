@@ -7,7 +7,7 @@
   left: 0;
   z-index: 40;
   transition: all 0.5s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.019); /* Fondo oscuro semi-transparente */
+  background-color: #3a8139; /* Fondo oscuro semi-transparente */
 }
 
 .header-bg {
@@ -55,7 +55,7 @@
 }
 
 .header a {
-  color: white; /* Color de texto blanco para enlaces */
+  color: rgb(255, 255, 255); /* Color de texto blanco para enlaces */
   text-decoration: none;
   transition: color 0.5s ease-in-out;
 }

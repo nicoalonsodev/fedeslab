@@ -1,14 +1,10 @@
 import logo from "./logo.png";
-import banner from "./bg.svg";
-import whatsapp from "./whatsapplogo.png";
-import tiktok from "./tiktoklogo.png";
-import meta from "./metalogo.png";
+import banner from "./bg.png";
+import fede from "./fede.jpg";
+import fede2 from "./fede2.jpg";
 
-
-export {
+export { 
     logo,
     banner,
-    whatsapp,
-    tiktok,
-    meta
-}
+    fede,
+    fede2 };

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 @import 'tailwindcss/base';
@@ -7,5 +8,46 @@
 /* 000000 (Negro) 5AC758 (Verde) FFFFFF (Blanco) */
 
 .vb {
-  background-color: #3a8139;
+  background-color: #398038;
+}
+
+.hanken-100 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.hanken-200 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.hanken-300 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hanken-400 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hanken-500 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.hanken-600 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hanken-700 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
