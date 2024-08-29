@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import VideoWistia from "../../components/Video/VideoWistia";
 import { banner } from "../../assets";
+import Integraciones from "../../components/Integraciones/Integraciones";
 // import InstagramSection from "../../components/InstagramSection/InstagramSection";
 import AboutUs from "../../components/AboutUs/AboutUs";
 // import DescriptionContact from "../../components/DescriptionContact/DescriptionContact";
@@ -10,6 +11,7 @@ import AboutUs from "../../components/AboutUs/AboutUs";
 import Footer from "../../components/Footer/Footer";
 import NewsCards from "../../components/NewsCards/NewsCards";
 import integrations from "../../assets/integrations.png"
+import Testimonios from "../../components/Testimonios/Testimonios";
 const Home = () => {
   return (
     <div className="hanken-100">
@@ -30,9 +32,12 @@ const Home = () => {
           <VideoWistia />
         </div>
       </div>
+      
 
       <AboutUs />
       <img src={integrations} alt="int" />
+      <Integraciones />
+      <Testimonios />
       <NewsCards />
       {/* <AboutIrene />
       <InstagramSection /> */}
