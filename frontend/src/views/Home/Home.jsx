@@ -7,7 +7,7 @@ import AboutUs from "../../components/AboutUs/AboutUs"
 
 // Lazy load de componentes
 const Integraciones = lazy(() => import("../../components/Integraciones/Integraciones"));
-const Testimonios = lazy(() => import("../../components/Testimonios/Testimonios"));
+const Testimonios = lazy(() => import("../../components/Testimonios/Testimonials"));
 const NewsCards = lazy(() => import("../../components/NewsCards/NewsCards"));
 
 const Home = () => {
