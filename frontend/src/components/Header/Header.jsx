@@ -47,13 +47,13 @@ const Header = () => {
           menuOpen ? "" : "border-b-[1px] border-gray-900"
         }`}
       >
-        <div className="mx-auto flex items-center justify-between lg:hidden z-30 ">
+        <div className="mx-auto flex items-center justify-between lg:hidden z-30 px-6 bg-[#3a8139]">
           <div className="logo flex items-center space-x-4">
             <a href="/">
               <img
                 src={navbar ? logo : logo}
                 alt="Logo"
-                style={{ width: "136px" }}
+                style={{ width: "36px" }}
               />
             </a>
           </div>
@@ -61,7 +61,7 @@ const Header = () => {
             onClick={handleMenuToggle}
             className={` ${
               menuOpen ? "rotate-180" : ""
-            } duration-700 text-gray-50 text-4xl inline-block md:hidden cursor-pointer `}
+            } duration-700 text-gray-50 text-4xl inline-block md:hidden cursor-pointer z-30 `}
           />
         </div>
         <div
