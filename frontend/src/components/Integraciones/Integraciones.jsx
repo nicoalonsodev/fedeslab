@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import { FaWhatsapp, FaFacebook, FaTiktok, FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
@@ -7,14 +7,14 @@ import "slick-carousel/slick/slick-theme.css";
 const Integraciones = () => {
   const settings = {
     dots: false,
+    arrows: false,
     infinite: true,
-    speed: 5000,
+    speed: 15000, 
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
-    cssEase: "linear",
-    arrows: false,
+    cssEase: "linear", 
     responsive: [
       {
         breakpoint: 1024,
@@ -38,29 +38,29 @@ const Integraciones = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-14"> {/* Aumenté el padding para evitar cortes */}
+    <div className="bg-gray-100 p-8">
       <h1 className="text-4xl font-normal text-center mb-8">Mis Integraciones:</h1>
       <Slider {...settings}>
-        <div className="px-4"> {/* Padding para evitar que se corten al expandirse */}
-          <FaWhatsapp className="w-20 h-14 text-green-500 transform transition-transform duration-300 hover:scale-90" alt="whatsapp" />
+        <div className="transform transition-transform duration-300 hover:scale-90">
+          <FaWhatsapp className="w-20 h-14 text-green-500" alt="whatsapp" />
         </div>
-        <div className="px-4">
-          <FaFacebook className="w-20 h-14 text-blue-600 transform transition-transform duration-300 hover:scale-90" alt="meta" />
+        <div className="transform transition-transform duration-300 hover:scale-90">
+          <FaFacebook className="w-20 h-14 text-blue-600" alt="meta" />
         </div>
-        <div className="px-4">
-          <FaTiktok className="w-20 h-14 text-black transform transition-transform duration-300 hover:scale-90" alt="tiktok" />
+        <div className="transform transition-transform duration-300 hover:scale-90">
+          <FaTiktok className="w-20 h-14 text-black" alt="tiktok" />
         </div>
-        <div className="px-4">
-          <FaInstagram className="w-20 h-14 text-pink-500 transform transition-transform duration-300 hover:scale-90" alt="instagram" />
+        <div className="transform transition-transform duration-300 hover:scale-90">
+          <FaInstagram className="w-20 h-14 text-pink-500" alt="instagram" />
         </div>
-        <div className="px-4">
-          <FaTwitter className="w-20 h-14 text-blue-400 transform transition-transform duration-300 hover:scale-90" alt="twitter" />
+        <div className="transform transition-transform duration-300 hover:scale-90">
+          <FaTwitter className="w-20 h-14 text-blue-400" alt="twitter" />
         </div>
-        <div className="px-4">
-          <FaYoutube className="w-20 h-14 text-red-500 transform transition-transform duration-300 hover:scale-90" alt="youtube" />
+        <div className="transform transition-transform duration-300 hover:scale-90">
+          <FaYoutube className="w-20 h-14 text-red-500" alt="youtube" />
         </div>
-        <div className="px-4">
-          <FaLinkedin className="w-20 h-14 text-blue-700 transform transition-transform duration-300 hover:scale-90" alt="linkedin" />
+        <div className="transform transition-transform duration-300 hover:scale-90">
+          <FaLinkedin className="w-20 h-14 text-blue-700" alt="linkedin" />
         </div>
       </Slider>
     </div>
@@ -68,6 +68,4 @@ const Integraciones = () => {
 };
 
 export default Integraciones;
-
-
 
