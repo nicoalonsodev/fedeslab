@@ -71,7 +71,7 @@ const Header = () => {
           <div className="logo flex items-center space-x-4">
             <a href="/">
               <img
-                src={navbar ? logo : logo}
+                src= "https://tecnologiabi.com/wp-content/uploads/2024/04/logo-3d-color.png"
                 alt="Logo"
                 style={{
                   height: navbar ? "50px" : "70px",
