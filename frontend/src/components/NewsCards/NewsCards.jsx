@@ -46,7 +46,7 @@ const NewsCards = () => {
         {newsData.map((news, index) => (
           <motion.div
             key={index}
-            className="bg-white rounded-lg shadow-lg overflow-hidden"
+            className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
             initial={{ opacity: 0, y: 50 }}  // Animación inicial
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 50 }}  // Animación cuando la card está en vista
             transition={{ duration: 0.8, delay: index * 0.3 }}  // Duración y retraso para cada card
@@ -82,4 +82,5 @@ const NewsCards = () => {
 };
 
 export default NewsCards;
+
 
