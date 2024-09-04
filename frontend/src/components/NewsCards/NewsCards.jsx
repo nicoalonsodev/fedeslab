@@ -1,32 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { fede, fede2 } from "../../assets";
+
 const newsData = [
   {
-    image:
-      fede,
+    image: fede,
     category: "PRENSA",
-    title:
-      "Fedeslab resultados",
+    title: "Fedeslab resultados",
     description:
       "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
     link: "#",
   },
   {
-    image:
-      fede2,
+    image: fede2,
     category: "DESARROLLISMO",
-    title:
-    "Fedeslab resultados",
-  description:
-    "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
+    title: "Fedeslab resultados",
+    description:
+      "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
     link: "#",
   },
   {
-    image:
-      fede,
+    image: fede,
     category: "DESARROLLISMO",
-    title:
-      "Fedeslab resultados",
+    title: "Fedeslab resultados",
     description:
       "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
     link: "#",
@@ -34,6 +30,9 @@ const newsData = [
 ];
 
 const NewsCards = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <div className="container mx-auto py-10 px-2 lg:px-32">
       <div className="w-full flex flex-col justify-start items-center mb-10">
@@ -45,9 +44,13 @@ const NewsCards = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {newsData.map((news, index) => (
-          <div
+          <motion.div
             key={index}
             className="bg-white rounded-lg shadow-lg overflow-hidden"
+            initial={{ opacity: 0, y: 50 }}  // Animación inicial
+            animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 50 }}  // Animación cuando la card está en vista
+            transition={{ duration: 0.8, delay: index * 0.3 }}  // Duración y retraso para cada card
+            ref={ref}
           >
             <img
               src={news.image}
@@ -61,7 +64,9 @@ const NewsCards = () => {
               <h2 className="hanken-500 w-full text-left mt-2 text-2xl font-bold text-gray-800">
                 {news.title}
               </h2>
-              <p className="hanken-200 text-left mt-2 text-gray-600">{news.description}</p>
+              <p className="hanken-200 text-left mt-2 text-gray-600">
+                {news.description}
+              </p>
               <a
                 href={news.link}
                 className="hanken-300 text-left mt-4 inline-block text-green-500 hover:text-green-600"
@@ -69,7 +74,7 @@ const NewsCards = () => {
                 Leer más &rarr;
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
@@ -77,3 +82,4 @@ const NewsCards = () => {
 };
 
 export default NewsCards;
+
