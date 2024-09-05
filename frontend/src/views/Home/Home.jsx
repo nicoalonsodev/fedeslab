@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react"; // Asegúrate de importar 'Suspense' y 'lazy' aquí
+import React, { Suspense, lazy } from "react"; 
 import Header from "../../components/Header/Header";
 import VideoWistia from "../../components/Video/VideoWistia";
 import { banner } from "../../assets";
