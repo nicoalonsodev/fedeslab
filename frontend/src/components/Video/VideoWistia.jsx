@@ -85,18 +85,7 @@ const VideoWistia = ({}) => {
             }}
           ></iframe>
         </div>
-        {/* {showOverlay && !isRegistered && (
-          <div
-            className="absolute inset-0 flex items-center justify-center"
-            onClick={handleOverlayClick}
-          >
-            <div className="bg-yellow-500 border-2 border-gray-100 bg-opacity-75 p-4 rounded-lg flex flex-col items-center justify-center text-white text-center cursor-pointer">
-              <img src={gif} alt="Click to unmute" className="w-16 h-16 mb-4" />
-              <p className="text-xl font-bold">Tu video ya ha comenzado</p>
-              <p className="text-lg">Haga clic para escuchar</p>
-            </div>
-          </div>
-        )} */}
+       
       </div>
       <div className="w-full flex justify-center">
          <AnimatedButton  />

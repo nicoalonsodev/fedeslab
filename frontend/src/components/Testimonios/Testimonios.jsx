@@ -36,24 +36,26 @@ const Testimonials = () => {
       <p className="text-xl text-center font-medium text-gray-500 mb-12">
         Mira lo que nuestros clientes dicen de nosotros
       </p>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        {testimonials.map((testimonial, index) => (
-          <motion.div
-            key={index}
-            className="testimonial relative p-[20px] bg-white shadow-lg rounded-[10px] text-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: isInView ? 1 : 0 }}
-            transition={{ duration: 0.8, delay: index * 0.3 }}
-            ref={ref}
-          >
-            <p className="quote italic text-lg font-normal text-gray-700 mb-4 px-4 lg:px-[20px]">
-              {testimonial.quote}
-            </p>
-            <p className="text-gray-800 font-bold">{testimonial.author}</p>
-            <p className="text-gray-700 font-light">{testimonial.role}</p>
-          </motion.div>
-        ))}
-      </div>
+      <div className="container mx-auto flex justify-center items-center">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {testimonials.map((testimonial, index) => (
+      <motion.div
+        key={index}
+        className="testimonial relative p-[20px] bg-white shadow-lg rounded-3xl text-center max-w-[350px]  lg:max-w-lg"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isInView ? 1 : 0 }}
+        transition={{ duration: 0.8, delay: index * 0.3 }}
+        ref={ref}
+      >
+        <p className="quote italic text-lg font-normal text-gray-700 mb-4 px-4 lg:px-[20px]">
+          {testimonial.quote}
+        </p>
+        <p className="text-gray-800 font-bold">{testimonial.author}</p>
+        <p className="text-gray-700 font-light">{testimonial.role}</p>
+      </motion.div>
+    ))}
+  </div>
+</div>
     </section>
   );
 };

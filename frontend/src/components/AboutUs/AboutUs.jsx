@@ -47,7 +47,7 @@ const AboutUs = () => {
       <div className="flex flex-wrap justify-center gap-6 mt-10">
         {/** Card 1 */}
         <motion.div
-          className="bg-white rounded-3xl text-left shadow-xl p-6 max-w-xs hover:scale-110 duration-300 border-[1px] border-green-300"
+          className="bg-white rounded-3xl text-left shadow-xl p-6  max-w-[350px] lg:max-w-xs hover:scale-110 duration-300 border-[1px] border-green-300"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.9 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -71,7 +71,7 @@ const AboutUs = () => {
 
         {/** Card 2 */}
         <motion.div
-          className="bg-white rounded-3xl text-left shadow-xl p-6 max-w-xs hover:scale-110 duration-300 border-[1px] border-green-300"
+          className="bg-white rounded-3xl text-left shadow-xl p-6 max-w-[350px] lg:max-w-xs hover:scale-110 duration-300 border-[1px] border-green-300"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.9 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -94,7 +94,7 @@ const AboutUs = () => {
 
         {/** Card 3 */}
         <motion.div
-          className="bg-white rounded-3xl text-left shadow-xl p-6 max-w-xs hover:scale-110 duration-300 border-[1px] border-green-300"
+          className="bg-white rounded-3xl text-left shadow-xl p-6 max-w-[350px] lg:max-w-xs hover:scale-110 duration-300 border-[1px] border-green-300"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.9 }}
           transition={{ duration: 0.8, delay: 0.7 }}
