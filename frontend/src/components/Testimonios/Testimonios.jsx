@@ -31,10 +31,10 @@ const Testimonials = () => {
   return (
     <section className="testimonials-section py-16 px-2 lg:px-32" >
       <h2 className="text-4xl hanken-500 text-center mb-8 text-gray-700">
-        No Tomes <span className="text-[#5AC758] hanken-700">Nuestra Palabra</span>
+        No Tomes <span className="text-[#5AC758] hanken-700">Mi Palabra</span>
       </h2>
       <p className="text-xl text-center font-medium text-gray-500 mb-12">
-        Mira lo que nuestros clientes dicen de nosotros
+        Mira lo dicen mis clientes
       </p>
       <div className="container mx-auto flex justify-center items-center">
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
