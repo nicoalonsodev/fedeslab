@@ -20,22 +20,27 @@ const Home = () => {
       <Header />
 
       <div
-        className="relative h-screen flex items-start lg:items-center justify-center overflow-hidden"
+        className="relative h-[80vh] lg:h-screen flex items-start lg:items-center justify-center overflow-hidden"
         style={{
           backgroundImage: `url(${banner})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="relative w-full z-10 text-center text-white px-2 lg:px-32 mt-20 lg:mt-16">
-          <h1 className="text-4xl lg:text-5xl hanken-700 mt-4 mb-6 text-gray-700 text-balance">
-            Aumenta tus ventas online con estrategia de contenido y publicidad.{" "}
+        <div className="relative w-full z-10 text-center text-white px-2 lg:px-32 mt-[90px] lg:mt-16">
+          <h1 className="text-4xl lg:text-5xl hanken-600 mt-4 mb-6 text-gray-600 text-balance">
+            <span className="text-[#3a8139] hanken-700">
+              Aumenta tus ventas
+            </span>{" "}
+            online con estrategia de{" "}
+            <span className="text-[#3a8139] hanken-700">
+              contenido y publicidad
+            </span>
+            .
           </h1>
 
           <VideoWistia />
-          <p className=" text-black text-lg italic text-balance font-normal">
-        Si estás cansado de contratar agencias de marketing que no se comprometen con tu marca, entonces estás en el lugar correcto. Con una atención personalizada y una estrategia basada en datos voy a aumentar tus ventas online en menos de 3 meses.
-      </p>
+         
         </div>
       </div>
 

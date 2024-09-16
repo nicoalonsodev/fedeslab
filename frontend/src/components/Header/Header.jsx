@@ -41,8 +41,8 @@ const Header = () => {
       <header
         className={`${
           navbar
-            ? "header-bg lg:shadow-2xl h-[80px] lg:h-[80px]"
-            : "header h-[80px] lg:h-[95px]"
+            ? "header-bg lg:shadow-2xl h-[70px] lg:h-[70px]"
+            : "header h-[70px] lg:h-[95px]"
         } text-gray-300 p-4 z-40 hanken-500 fixed w-full top-0 transition-all duration-500  ${
           menuOpen ? "" : "border-b-[1px] border-gray-900"
         }`}
@@ -51,9 +51,9 @@ const Header = () => {
           <div className="logo flex items-center space-x-4">
             <a href="/">
               <img
-                src={navbar ? logo : logo}
+                src="https://s1.significados.com/assets/img/logo@2x.png"
                 alt="Logo"
-                style={{ width: "36px" }}
+                style={{ width: "100px" }}
               />
             </a>
           </div>
@@ -66,15 +66,15 @@ const Header = () => {
         </div>
         <div
           className="mx-auto flex items-center justify-between hidden lg:flex hanken-300"
-          style={{ maxWidth: "1150px", height: navbar ? "50px" : "70px" }}
+          style={{ maxWidth: "1150px", height: navbar ? "50px" : "50px" }}
         >
           <div className="logo flex items-center space-x-4">
             <a href="/">
               <img
-                src= "https://tecnologiabi.com/wp-content/uploads/2024/04/logo-3d-color.png"
+                src= "https://s1.significados.com/assets/img/logo@2x.png"
                 alt="Logo"
                 style={{
-                  height: navbar ? "50px" : "70px",
+                  height: navbar ? "40px" : "40px",
                 }}
               />
             </a>
@@ -141,7 +141,7 @@ const Header = () => {
             animate={{ y: 0 }}
             exit={{ y: -340 }}
             transition={{ duration: 0.7 }}
-            className="fixed top-0 left-0 text-left w-full h-96 px-4 mt-10 bg-[#3a8139] text-white poppins-semibold z-20 flex flex-col items-start justify-center space-y-4"
+            className="fixed top-0 left-0 text-left w-full h-96 px-4 mt-10 bg-[#3a8139] text-white hanken-300 z-20 flex flex-col items-start justify-center space-y-4"
           >
             <a href="/" onClick={() => handleNavClick("/")} className="text-lg">
               Inicio
@@ -178,9 +178,9 @@ const Header = () => {
             <div>
               <a
                 href="/"
-                className="tracking-widest poppins-regular bg-gray-50 hover:bg-gray-800 duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 "
+                className="tracking-widest poppins-regular bg-gray-50 hover:bg-gray-800 duration-300 text-[#3a8139] px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 "
               >
-                SOLICITAR ASESOR <IoIosContacts className="text-3xl" />
+                AGENDAR MI LLAMADA <IoIosContacts className="text-3xl" />
               </a>
             </div>
           </motion.div>
