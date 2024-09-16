@@ -14,7 +14,7 @@ const AnimatedButton = () => {
         onClick={handleButtonClick}
         className="w-full lg:w-100 animated-button text-xl border-[1px] border-[#398038] px-8 py-3 rounded-full"
       >
-        <span className="text-2xl flex justify-center items-center">
+        <span className="text-xl lg:text-2xl flex justify-center items-center gap-x-2">
           <SiCalendly /> QUIERO AGENDAR MI LLAMADA
         </span>
       </button>

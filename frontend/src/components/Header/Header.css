@@ -1,7 +1,7 @@
 /* Header.css */
 .header {
   position: fixed;
-  height: 90px;
+  height: 70px;
   width: 100%;
   top: 0;
   left: 0;
@@ -19,7 +19,7 @@
 @media (max-width: 768px) {
   .header {
     background-color: #3a8139; 
-    height: 80px;
+    height: 70px;
   }
   .header-bg {
     background-color: #3a8139;
