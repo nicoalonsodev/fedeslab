@@ -28,12 +28,12 @@ const Home = () => {
         }}
       >
         <div className="relative w-full z-10 text-center text-white px-2 lg:px-32 mt-[90px] lg:mt-16">
-          <h1 className="text-4xl lg:text-5xl hanken-600 mt-4 mb-6 text-gray-600 text-balance">
-            <span className="text-[#3a8139] hanken-700">
+          <h1 className="text-2xl lg:text-4xl montserrat-bold uppercase mt-4 mb-6 text-gray-600 text-balance">
+            <span className="text-[#3a8139] ">
               Aumenta tus ventas
             </span>{" "}
             online con estrategia de{" "}
-            <span className="text-[#3a8139] hanken-700">
+            <span className="text-[#3a8139] ">
               contenido y publicidad
             </span>
             .

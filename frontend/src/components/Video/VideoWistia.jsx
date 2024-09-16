@@ -19,7 +19,7 @@ const VideoWistia = ({}) => {
           ></iframe>
         </div>
       </div>
-      <p className="mb-4 lg:mb-4 mt-6 lg:mt-0 text-gray-100 text-md italic text-balance font-normal">
+      <p className="mb-4 lg:mb-4 mt-10 lg:mt-0 text-gray-100 text-md italic text-balance font-normal">
       ❛ Si estás cansado de contratar agencias de marketing que no se
             comprometen con tu marca, entonces estás en el lugar correcto. Con
             una atención personalizada y una estrategia basada en datos voy a
