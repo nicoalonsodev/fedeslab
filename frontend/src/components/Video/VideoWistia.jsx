@@ -15,7 +15,7 @@ const VideoWistia = ({}) => {
             allow="autoplay"
             frameBorder="0"
             title="Wistia Video"
-            allowFullScreen
+            allowFullScreen 
           ></iframe>
         </div>
       </div>

@@ -58,13 +58,13 @@ const AboutUs = () => {
               <FaBullhorn className="text-green-500 text-3xl" />
             </div>
           </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2">
+          <h3 className="text-2xl font-bold text-gray-800 mb-2">
             Análisis de Datos
           </h3>
-          <p className="text-gray-600 mb-4 hanken-300">
+          <p className="text-gray-600 mb-4  text-lg hanken-300">
             Lo que no se puede medir, no se puede mejorar
           </p>
-          <ul className="list-disc list-inside hanken-300 text-gray-600">
+          <ul className="list-disc list-inside  text-lg lg:text-xl text-gray-700 hanken-400">
             <li>Análisis de mercado</li>
             <li>
               Construcción de mapa cliente (desde que te conoce hasta que te
@@ -86,16 +86,15 @@ const AboutUs = () => {
               <FaChartBar className="text-green-500 text-3xl" />
             </div>
           </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2">Estrategia</h3>
-          <p className="text-gray-600 mb-4 hanken-300">
+          <h3 className="text-2xl font-bold text-gray-800 mb-2">Estrategia</h3>
+          <p className="text-gray-600 mb-4 text-lg hanken-300 italic">
             Lo que se mide se puede direccionar
           </p>
-          <ul className="list-disc list-inside text-gray-600 hanken-300">
+          <ul className="list-disc list-inside text-lg lg:text-xl text-gray-700 hanken-400">
             <li>Optimización de landing/web</li>
             <li>Estrategias de contenido</li>
             <li>
-              Estrategias de post-venta ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎
-              ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎{" "}
+              Estrategias de post-venta  
             </li>
           </ul>
         </motion.div>
@@ -112,14 +111,14 @@ const AboutUs = () => {
               <FaLightbulb className="text-green-500 text-3xl" />
             </div>
           </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2">Publicidad</h3>
-          <p className="text-gray-600 mb-4 hanken-300">
+          <h3 className="text-2xl font-bold text-gray-800 mb-2">Publicidad</h3>
+          <p className="text-gray-600 mb-4  text-lg hanken-300 italic">
             Lo que se direcciona se puede potenciar
           </p>
-          <ul className="list-disc list-inside text-gray-600 hanken-300">
-            <li>Campañas direccionadas a públicos nuevos</li>
-            <li>Google, Meta y Tiktok Ads</li>
-            <li>Informes detallados e iteraciones conscientes</li>
+          <ul className="list-disc list-inside  text-lg lg:text-xl text-gray-700 hanken-400">
+            <li>Campañas direccionadas a públicos nuevos.</li>
+            <li>Google, Meta y Tiktok Ads.</li>
+            <li>Informes detallados e iteraciones conscientes.</li>
           </ul>
         </motion.div>
       </div>
