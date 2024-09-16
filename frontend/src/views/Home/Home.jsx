@@ -27,12 +27,15 @@ const Home = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="relative w-full z-10 text-center text-white px-2 lg:px-32 mt-32 lg:mt-16">
+        <div className="relative w-full z-10 text-center text-white px-2 lg:px-32 mt-20 lg:mt-16">
           <h1 className="text-4xl lg:text-5xl hanken-700 mt-4 mb-6 text-gray-700 text-balance">
             Aumenta tus ventas online con estrategia de contenido y publicidad.{" "}
           </h1>
 
           <VideoWistia />
+          <p className=" text-black text-lg italic text-balance font-normal">
+        Si estás cansado de contratar agencias de marketing que no se comprometen con tu marca, entonces estás en el lugar correcto. Con una atención personalizada y una estrategia basada en datos voy a aumentar tus ventas online en menos de 3 meses.
+      </p>
         </div>
       </div>
 
