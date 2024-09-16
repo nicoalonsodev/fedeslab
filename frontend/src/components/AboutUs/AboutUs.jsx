@@ -5,12 +5,12 @@ import { FaBullhorn, FaChartBar, FaLightbulb } from "react-icons/fa";
 
 const AboutUs = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true,  threshold: 0  });
 
   return (
     <div
       id="bodyline"
-      className="relative w-screen bg-white flex flex-wrap items-center justify-center py-8 lg:py-20 bg-gray-200"
+      className="relative w-screen bg-white flex flex-wrap items-center justify-center py-4 lg:py-20 bg-gray-200"
     >
       {/* Título */}
       <motion.div
