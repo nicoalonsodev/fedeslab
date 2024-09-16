@@ -33,13 +33,13 @@ const AboutUs = () => {
           animate={{ opacity: isInView ? 1 : 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          Bodyline ofrece un servicio integral de transformación personalizada
-          que abarca aspectos fundamentales de la salud, como la nutrición y el
-          breathwork. Su programa de 6 meses se centra en mejorar la salud
-          física y mental de los clientes mediante asesorías individualizadas
-          uno a uno. A diferencia de otras opciones en el mercado, Bodyline se
-          distingue por su enfoque personalizado, acompañando a los clientes en
-          todo el proceso de transformación.
+          Fedeslab es una marca personal que soluciona el problema más grande
+          que tienen todos los emprendedores digitales: generar nuevos clientes.
+          Mediante estrategias de growth marketing y publicidad me enfoco en
+          generar audiencias y llegar a nuevas personas con un alto grado de
+          fidelización. Mediante el análisis de la competencia, el estudio del
+          recorrido de cliente, estrategias de contenido y publicidad por Meta,
+          Google y TikTok llevó tu marca al siguiente nivel.
         </motion.p>
       </motion.div>
 
@@ -47,7 +47,7 @@ const AboutUs = () => {
       <div className="flex flex-wrap justify-center gap-6 mt-10">
         {/** Card 1 */}
         <motion.div
-          className="bg-white rounded-3xl text-left shadow-xl p-6  max-w-[350px] lg:max-w-xs hover:scale-110 duration-300 border-[1px] border-green-300"
+          className="bg-white rounded-3xl text-left shadow-xl p-6 max-w-[350px] lg:max-w-xs hover:scale-110 duration-300 border-[1px] border-green-300 min-h-[400px]"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.9 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -58,20 +58,25 @@ const AboutUs = () => {
               <FaBullhorn className="text-green-500 text-3xl" />
             </div>
           </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2">Paid Media</h3>
+          <h3 className="text-xl font-bold text-gray-800 mb-2">
+            Análisis de Datos
+          </h3>
           <p className="text-gray-600 mb-4 hanken-300">
-            Llega a tu audiencia con publicidad digital
+            Lo que no se puede medir, no se puede mejorar
           </p>
           <ul className="list-disc list-inside hanken-300 text-gray-600">
-            <li>Social Ads</li>
-            <li>Publicidad Programática</li>
-            <li>SEM y PPC</li>
+            <li>Análisis de mercado</li>
+            <li>
+              Construcción de mapa cliente (desde que te conoce hasta que te
+              compra)
+            </li>
+            <li>Análisis de oferta</li>
           </ul>
         </motion.div>
 
         {/** Card 2 */}
         <motion.div
-          className="bg-white rounded-3xl text-left shadow-xl p-6 max-w-[350px] lg:max-w-xs hover:scale-110 duration-300 border-[1px] border-green-300"
+          className="bg-white rounded-3xl text-left shadow-xl p-6 max-w-[350px] lg:max-w-xs hover:scale-110 duration-300 border-[1px] border-green-300 min-h-[400px]"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.9 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -81,20 +86,23 @@ const AboutUs = () => {
               <FaChartBar className="text-green-500 text-3xl" />
             </div>
           </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2">Data</h3>
+          <h3 className="text-xl font-bold text-gray-800 mb-2">Estrategia</h3>
           <p className="text-gray-600 mb-4 hanken-300">
-            Soluciones basadas en datos para tu éxito digital
+            Lo que se mide se puede direccionar
           </p>
           <ul className="list-disc list-inside text-gray-600 hanken-300">
-            <li>Analítica y Atribución</li>
-            <li>Implementaciones Técnicas</li>
-            <li>CRO</li>
+            <li>Optimización de landing/web</li>
+            <li>Estrategias de contenido</li>
+            <li>
+              Estrategias de post-venta ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎
+              ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎{" "}
+            </li>
           </ul>
         </motion.div>
 
         {/** Card 3 */}
         <motion.div
-          className="bg-white rounded-3xl text-left shadow-xl p-6 max-w-[350px] lg:max-w-xs hover:scale-110 duration-300 border-[1px] border-green-300"
+          className="bg-white rounded-3xl text-left shadow-xl p-6 max-w-[350px] lg:max-w-xs hover:scale-110 duration-300 border-[1px] border-green-300 min-h-[400px]"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.9 }}
           transition={{ duration: 0.8, delay: 0.7 }}
@@ -104,14 +112,14 @@ const AboutUs = () => {
               <FaLightbulb className="text-green-500 text-3xl" />
             </div>
           </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2">Estrategia</h3>
+          <h3 className="text-xl font-bold text-gray-800 mb-2">Publicidad</h3>
           <p className="text-gray-600 mb-4 hanken-300">
-            Potencia tu negocio con estrategias efectivas
+            Lo que se direcciona se puede potenciar
           </p>
           <ul className="list-disc list-inside text-gray-600 hanken-300">
-            <li>Consultoría</li>
-            <li>Estrategia y Planificación</li>
-            <li>Auditorías Técnicas</li>
+            <li>Campañas direccionadas a públicos nuevos</li>
+            <li>Google, Meta y Tiktok Ads</li>
+            <li>Informes detallados e iteraciones conscientes</li>
           </ul>
         </motion.div>
       </div>
@@ -120,4 +128,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-
