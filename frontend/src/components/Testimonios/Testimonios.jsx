@@ -24,7 +24,7 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
-  const refContainer = useRef(null); // Referencia al contenedor principal
+  const refContainer = useRef(null); 
   const isInView = useInView(refContainer, { once: true, threshold: 0.1 });
 
   return (
