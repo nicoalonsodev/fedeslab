@@ -3,7 +3,7 @@ import AnimatedButton from "../AnimatedButton/AnimatedButton";
 import "./Video.css";
 
 const VideoWistia = ({}) => {
-  const videoUrl = "https://fast.wistia.net/embed/iframe/pmkgntlrt0";
+  const videoUrl = "https://fast.wistia.net/embed/iframe/5lx6fgn9l7";
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center  px-0 lg:px-32">

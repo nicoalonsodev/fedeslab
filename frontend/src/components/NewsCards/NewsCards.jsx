@@ -34,7 +34,7 @@ const NewsCards = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="container mx-auto py-10 px-2 lg:px-32">
+    <div id="blog" className="container mx-auto py-10 px-2 lg:px-32">
       <div className="w-full flex flex-col justify-start items-center mb-10">
         <h1 className="hanken-400 text-4xl text-gray-700 text-center lg:text-left">
           Fedeslab{" "}

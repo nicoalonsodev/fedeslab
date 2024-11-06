@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { logo } from "../../assets";
+import { logo, logo_blanco } from "../../assets";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -51,7 +51,7 @@ const Header = () => {
           <div className="logo flex items-center space-x-4">
             <a href="/">
               <img
-                src="https://s1.significados.com/assets/img/logo@2x.png"
+                src={logo_blanco}
                 alt="Logo"
                 style={{ width: "100px" }}
               />
@@ -71,8 +71,8 @@ const Header = () => {
           <div className="logo flex items-center space-x-4">
             <a href="/">
               <img
-                src= "https://s1.significados.com/assets/img/logo@2x.png"
-                alt="Logo"
+                src={navbar ? logo : logo_blanco}
+                alt="Fedeslab - Logo"
                 style={{
                   height: navbar ? "40px" : "40px",
                 }}
@@ -82,8 +82,7 @@ const Header = () => {
           <nav className="flex-grow flex justify-center space-x-10">
             <div className="text-md poppins-semibold space-x-10">
               <a
-                href="#bodyline"
-                // onClick={() => handleNavClick("/proyectos")}
+                href="#fedeslab"
                 className={`${
                   currentPage === "/proyectos" ? "active" : "a-h"
                 } ${navbar ? "text-gray-700" : ""}`}
@@ -91,7 +90,7 @@ const Header = () => {
                 Fedeslab
               </a>
               <a
-                href="#irene"
+                href="#propuesta"
                 // onClick={() => handleNavClick("/sobre-nosotros")}
                 className={`${
                   currentPage === "/sobre-nosotros" ? "active" : "a-h"
@@ -100,17 +99,7 @@ const Header = () => {
                 Propuesta
               </a>
               <a
-                href="#contact"
-                onClick={() => handleNavClick("/contacto")}
-                className={`${currentPage === "/contacto" ? "active" : "a-h"} ${
-                  navbar ? "text-gray-700" : ""
-                }`}
-              >
-                Contacto
-              </a>
-
-              <a
-                href="#community"
+                href="#integraciones"
                 onClick={() => handleNavClick("/novedades")}
                 className={`${
                   currentPage === "/novedades" ? "active" : "a-h"
@@ -118,6 +107,17 @@ const Header = () => {
               >
                 Integraciones
               </a>
+              <a
+                href="#blog"
+                onClick={() => handleNavClick("/contacto")}
+                className={`${currentPage === "/contacto" ? "active" : "a-h"} ${
+                  navbar ? "text-gray-700" : ""
+                }`}
+              >
+                Blog
+              </a>
+
+              
             </div>
             <div
               className={`${
@@ -125,10 +125,10 @@ const Header = () => {
               } flex items-center border-[1px] hover:border-[#00314b] hover:text-[#00314b] duration-300 px-3 rounded-full`}
             >
               <a
-                href="#therapys"
+                href="#contacto"
                 className=" flex items-center gap-x-2 poppins-regular"
               >
-               Blog <GiThreeLeaves />
+              AGENDAR MI LLAMADA <IoIosContacts className="text-3xl" />
               </a>
             </div>
           </nav>
@@ -144,32 +144,32 @@ const Header = () => {
             className="fixed top-0 left-0 text-left w-full h-96 px-4 mt-10 bg-[#3a8139] text-white hanken-300 z-20 flex flex-col items-start justify-center space-y-4"
           >
             <a href="/" onClick={() => handleNavClick("/")} className="text-lg">
-              Inicio
+              Fedeslab
             </a>
             <a
-              href="/proyectos"
+              href="#fedeslab"
               onClick={() => handleNavClick("/proyectos")}
               className="text-lg"
             >
-              Edificios
+              Propuesta
             </a>
             <a
-              href="/sobre-nosotros"
+              href="#propuesta"
               onClick={() => handleNavClick("/sobre-nosotros")}
               className="text-lg"
             >
               Nuestra Empresa
             </a>
             <a
-              href="/contacto"
+              href="#blog"
               onClick={() => handleNavClick("/contacto")}
               className="text-lg"
             >
-              Contacto
+              Blog
             </a>
 
             <a
-              href="/novedades"
+              href="#integraciones"
               onClick={() => handleNavClick("/novedades")}
               className="text-lg"
             >
