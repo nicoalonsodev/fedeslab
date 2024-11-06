@@ -34,7 +34,7 @@ const NewsCards = () => {
   const isInView = useInView(refContainer, { once: true, threshold: 0.1 });
 
   return (
-    <div className="container mx-auto py-10 px-2 lg:px-32" ref={refContainer}>
+    <div id="blog"  className="container mx-auto py-10 px-2 lg:px-32" ref={refContainer}>
       <motion.div
         className="w-full flex flex-col justify-start items-center mb-10"
         initial={{ opacity: 0, y: -50 }}

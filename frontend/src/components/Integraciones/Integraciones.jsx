@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import { FaWhatsapp, FaFacebook, FaTiktok, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { google, meta, tableau, doppler, tiktok } from "../../assets";
 
 const Integraciones = () => {
   const settings = {
@@ -41,25 +41,25 @@ const Integraciones = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-8">
+    <div id="integraciones" className="bg-gray-100 p-8">
       <h1 className="text-4xl font-semibold text-gray-700 text-center mb-8">
         Mis <span className="text-[#5AC758] hanken-700">Integraciones</span>
       </h1>
-      <Slider {...settings}>
+      <Slider {...settings} className="">
         <div className="transform transition-transform duration-300 hover:scale-105">
-          <FaWhatsapp className="w-16 md:w-20 lg:w-24 h-16 md:h-20 lg:h-24 text-green-500" />
+          <img src={google} alt="Google" className=" w-16 md:w-20 lg:w-24 py-4  " />
         </div>
         <div className="transform transition-transform duration-300 hover:scale-105">
-          <FaFacebook className="w-16 md:w-20 lg:w-24 h-16 md:h-20 lg:h-24 text-blue-600" />
+          <img src={meta} alt="Meta" className=" w-16 md:w-20 lg:w-24 py-4  " />
         </div>
         <div className="transform transition-transform duration-300 hover:scale-105">
-          <FaTiktok className="w-16 md:w-20 lg:w-24 h-16 md:h-20 lg:h-24 text-black" />
+          <img src={tableau} alt="Tableau" className=" w-16 md:w-20 lg:w-24 py-4  " />
         </div>
         <div className="transform transition-transform duration-300 hover:scale-105">
-          <FaInstagram className="w-16 md:w-20 lg:w-24 h-16 md:h-20 lg:h-24 text-pink-500" />
+          <img src={doppler} alt="Doppler" className=" w-16 md:w-20 lg:w-24 py-4  " />
         </div>
         <div className="transform transition-transform duration-300 hover:scale-105">
-          <FaLinkedin className="w-16 md:w-20 lg:w-24 h-16 md:h-20 lg:h-24 text-blue-700" />
+          <img src={tiktok} alt="TikTok" className=" w-16 md:w-20 lg:w-24 py-4  " />
         </div>
       </Slider>
     </div>

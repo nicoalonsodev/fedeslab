@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* 000000 (Negro) 5AC758 (Verde) FFFFFF (Blanco) */
+/* Colores */
+:root {
+  --color-black: #000000;
+  --color-green: #5AC758;
+  --color-white: #FFFFFF;
+}
 
 /* Scroll personalizado solo para Home */
 .home-scrollbar {
@@ -33,6 +36,24 @@
   background-color: #555;
 }
 
+/* Fuentes locales */
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('./utils/fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./utils/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
+
+/* Clases de estilo para fuentes */
 .hanken-100 {
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: 100;
@@ -62,6 +83,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
 .hanken-600 {
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: 600;
@@ -74,6 +96,12 @@
   font-style: normal;
 }
 
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
 .lato-black {
   font-family: "Lato", sans-serif;
   font-weight: 900;
@@ -82,12 +110,6 @@
 
 .lato-bold {
   font-family: "Lato", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.montserrat-bold {
-  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
