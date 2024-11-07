@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import "./Testimonios.css";
-
+import AnimatedButton from "../AnimatedButton/AnimatedButton";
 const testimonials = [
   {
     quote:
@@ -50,17 +50,19 @@ const Testimonials = () => {
       >
         No Tomes <span className="text-[#5AC758] hanken-700">Mi Palabra</span>
       </motion.h2>
-
+      
       <motion.p
-        className="text-xl text-center font-medium text-gray-500 mb-12"
+        className="text-xl text-center font-medium text-gray-500 mb-4 "
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -50 }}
         transition={{ duration: 0.6, delay: 0.3 }}
       >
         Mira lo que dicen mis clientes
       </motion.p>
-
-      <div className="container mx-auto flex justify-center items-center">
+      <div className="w-full flex justify-center">
+        <AnimatedButton />
+      </div>
+      <div className="container mx-auto flex justify-center items-center mt-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
