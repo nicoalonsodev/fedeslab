@@ -9,7 +9,7 @@ const Footer = () => {
       </div>
       <div className="max-w-7xl mt-3 mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center">
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/fedeslab/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block  text-[#00314b] font-poppins py-3 px-3 lg:px-6 rounded-full text-sm transition hover:scale-110 duration-300 items-center"
@@ -17,7 +17,7 @@ const Footer = () => {
           <FaInstagram size={30} className="" />
         </a>
         <a
-          href="http://linkedin.com/in/"
+          href="https://www.linkedin.com/in/federico-pasquini-64007a285/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block  text-[#00314b] font-poppins py-3 px-3 lg:px-6 rounded-full text-sm transition hover:scale-110 duration-300 items-center"
