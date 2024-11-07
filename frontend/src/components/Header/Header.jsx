@@ -173,7 +173,7 @@ const Header = () => {
               onClick={() => handleNavClick("/novedades")}
               className="text-lg"
             >
-              News
+              Integraciones
             </a>
             <div>
               <a
