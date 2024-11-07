@@ -21,7 +21,7 @@ const Home = () => {
 
       <div
       id="fedeslab"
-        className="relative h-[80vh] lg:h-screen flex items-start lg:items-center justify-center overflow-hidden"
+        className="relative h-[90vh] lg:h-screen flex items-start lg:items-center justify-center overflow-hidden"
         style={{
           backgroundImage: `url(${banner})`,
           backgroundSize: "cover",
@@ -29,7 +29,7 @@ const Home = () => {
         }}
       >
         <div className="relative w-full z-10 text-center text-white px-2 lg:px-32 mt-[90px] lg:mt-16">
-          <h1 className="text-2xl lg:text-4xl montserrat-bold uppercase mt-4 mb-6 text-gray-600 text-balance">
+          <h1 className="text-xl lg:text-4xl montserrat-bold uppercase mt-4 mb-6 text-gray-600 text-balance">
             <span className="text-[#3a8139] ">Aumenta tus ventas</span> online
             con estrategia de{" "}
             <span className="text-[#3a8139] ">contenido y publicidad</span>.

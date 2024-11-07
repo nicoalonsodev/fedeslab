@@ -15,16 +15,16 @@ const VideoWistia = ({}) => {
             allow="autoplay"
             frameBorder="0"
             title="Wistia Video"
-            allowFullScreen 
+            allowFullScreen
           ></iframe>
         </div>
       </div>
-      <p className="mb-4 lg:mb-4 mt-10 lg:mt-0 text-gray-100 text-md italic text-balance font-normal">
-      ❛ Si estás cansado de contratar agencias de marketing que no se
-            comprometen con tu marca, entonces estás en el lugar correcto. Con
-            una atención personalizada y una estrategia basada en datos voy a
-            aumentar tus ventas online en menos de 3 meses.❜
-          </p>
+      <p className="mb-4 lg:mb-4 mt-4 lg:mt-0 text-gray-100 text-xs lg:text-md italic text-balance font-normal">
+        ❛ Si estás cansado de contratar agencias de marketing que no se
+        comprometen con tu marca, entonces estás en el lugar correcto. Con una
+        atención personalizada y una estrategia basada en datos voy a aumentar
+        tus ventas online en menos de 3 meses.❜
+      </p>
       <div className="w-full flex justify-center">
         <AnimatedButton />
       </div>
