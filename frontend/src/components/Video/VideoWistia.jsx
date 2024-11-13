@@ -2,14 +2,19 @@ import React, { useState } from "react";
 import AnimatedButton from "../AnimatedButton/AnimatedButton";
 import "./Video.css";
 import Registro from "../Registro/Registro";
+import AnswerNo from "../AnswerNo/AnswerNo";
 const VideoWistia = ({}) => {
   const [showForm, setShowform] = useState(false);
+  const [showRejection, setShowRejection] = useState(false);
   const videoUrl = "https://fast.wistia.net/embed/iframe/5lx6fgn9l7";
 
   const actualizarEstadoPadre = (estado) => {
     setShowform(estado);
   };
-  
+  const actualizarEstadoNo = (estado) => {
+    setShowRejection(estado);
+  };
+
   const handleClick = (click) => {
     setShowform(click);
   };
@@ -34,7 +39,7 @@ const VideoWistia = ({}) => {
         tus ventas online en menos de 3 meses.❜
       </p>
       <div className="w-full flex justify-center">
-        <AnimatedButton  actualizarEstado={actualizarEstadoPadre} />
+        <AnimatedButton actualizarEstado={actualizarEstadoPadre} />
       </div>
       {showForm && (
         <>
@@ -44,10 +49,20 @@ const VideoWistia = ({}) => {
           ></div>
           <div className="fixed inset-0 flex items-center justify-center z-50">
             <div className="bg-white p-4 rounded-lg shadow-lg">
-              <Registro
-                actualizarEstado={actualizarEstadoPadre}
-      
-              />
+              <Registro actualizarEstado={actualizarEstadoPadre} actualizarEstadoAnswer={actualizarEstadoNo} />
+            </div>
+          </div>
+        </>
+      )}
+      {showRejection && (
+        <>
+          <div
+            className="fixed inset-0 bg-gray-800 opacity-50 z-40"
+            onClick={() => actualizarEstadoNo(false)}
+          ></div>
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+            <div className="bg-white p-4 rounded-lg shadow-lg">
+              <AnswerNo actualizarEstado={actualizarEstadoNo} />
             </div>
           </div>
         </>
