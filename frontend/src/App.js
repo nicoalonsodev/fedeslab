@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./views/Home/Home";
+import Gracias from "./views/Gracias/Gracias";
 import "./App.css";
 
 function App() {
@@ -7,8 +8,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/gracias" element={<Gracias />} />
       </Routes>
-      {/* <WhatsAppButton /> */}
     </div>
   );
 }
