@@ -1,33 +1,38 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { fede, fede2 } from "../../assets";
+import {newsData} from "../../utils/newsData"
 
-const newsData = [
-  {
-    image: fede,
-    category: "PRENSA",
-    title: "Fedeslab resultados",
-    description:
-      "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
-    link: "#",
-  },
-  {
-    image: fede2,
-    category: "DESARROLLISMO",
-    title: "Fedeslab resultados",
-    description:
-      "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
-    link: "#",
-  },
-  {
-    image: fede,
-    category: "DESARROLLISMO",
-    title: "Fedeslab resultados",
-    description:
-      "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
-    link: "#",
-  },
-];
+// const newsData = [
+//   {
+//     image: fede,
+//     category: "PRENSA",
+//     title: "Fedeslab resultados",
+//     additionalContent:
+//       "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
+//       slug: "caso-exito-cimes-agua-segura",
+//       link: "/novedades/caso-exito-cimes-agua-segura",
+
+//   },
+//   {
+//     image: fede2,
+//     category: "DESARROLLISMO",
+//     title: "Fedeslab resultados",
+//     additionalContent:
+//       "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
+//       slug: "apertura-reservas-bancos-2025",
+//       link: "/novedades/apertura-reservas-bancos-2025",
+//   },
+//   {
+//     image: fede,
+//     category: "DESARROLLISMO",
+//     title: "Fedeslab resultados",
+//     additionalContent:
+//       "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
+//       slug: "apertura-reservas-bancos-2025",
+//       link: "/novedades/apertura-reservas-bancos-2025",
+//   },
+// ];
 
 const NewsCards = () => {
   const refContainer = useRef(null);
@@ -70,7 +75,7 @@ const NewsCards = () => {
                 {news.title}
               </h2>
               <p className="hanken-200 text-left mt-2 text-gray-600">
-                {news.description}
+                {news.fullText}
               </p>
               <a
                 href={news.link}

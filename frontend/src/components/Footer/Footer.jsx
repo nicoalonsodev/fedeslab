@@ -4,9 +4,9 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-[#3a8139] text-white py-8">
-      <div className="flex items-center justify-center">
+      <a href="/" className="flex items-center justify-center">
         <img src={logo_blanco} alt="Logo" className="w-[150px]" />
-      </div>
+      </a>
       <div className="max-w-7xl mt-3 mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center">
         <a
           href="https://www.instagram.com/fedeslab/"
