@@ -51,7 +51,15 @@
   font-style: normal;
 }
 
+ul {
+  list-style-type: disc; /* Asegura que se muestre el punto de la lista */
+  padding-left: 20px;    /* Aumenta el margen para que los puntos no se peguen al borde */
+}
 
+li {
+  margin-bottom: 4px;
+  text-align: left;    /* Espaciado opcional entre los elementos de la lista */
+}
 
 /* Clases de estilo para fuentes */
 .hanken-100 {

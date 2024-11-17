@@ -8,5 +8,33 @@ import meta from "./integraciones/meta.png";
 import doppler from "./integraciones/doppler.png";
 import tableau from "./integraciones/tableau.png";
 import google from "./integraciones/google.png";
-
-export { logo, logo_blanco, banner, fede, fede2, tiktok, meta, doppler, tableau, google };
+import meta2 from "./news/meta2.webp";
+import cimes from "./news/cimes.webp";
+import cimes2 from "./news/cimes2.webp";
+import cimes3 from "./news/cimes3.webp";
+import synagro from "./news/synagro.webp";
+import synagro2 from "./news/synagro2.webp";
+import synagro3 from "./news/synagro3.webp";
+import synagro4 from "./news/synagro4.webp";
+import synagro5 from "./news/synagro5.webp";
+export {
+  logo,
+  logo_blanco,
+  banner,
+  fede,
+  fede2,
+  tiktok,
+  meta,
+  doppler,
+  tableau,
+  google,
+  meta2,
+  cimes,
+  cimes2,
+  cimes3,
+  synagro,
+  synagro2,
+  synagro3,
+  synagro4,
+  synagro5
+};
