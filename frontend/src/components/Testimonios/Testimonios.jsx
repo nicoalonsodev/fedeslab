@@ -1,7 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import "./Testimonios.css";
 import AnimatedButton from "../AnimatedButton/AnimatedButton";
+import AnswerNo from "../AnswerNo/AnswerNo";
+import Registro from "../Registro/Registro";
 const testimonials = [
   {
     quote:
@@ -37,9 +39,22 @@ const testimonials = [
 
 
 const Testimonials = () => {
+  const [showForm, setShowform] = useState(false);
+  const [showRejection, setShowRejection] = useState(false);
+
   const refContainer = useRef(null); 
   const isInView = useInView(refContainer, { once: true, threshold: 0.1 });
 
+  const actualizarEstadoPadre = (estado) => {
+    setShowform(estado);
+  };
+  const actualizarEstadoNo = (estado) => {
+    setShowRejection(estado);
+  };
+
+  const handleClick = (click) => {
+    setShowform(click);
+  };
   return (
     <section id="testimonios" className="testimonials-section py-16 px-2 lg:px-32" ref={refContainer}>
       <motion.h2
@@ -60,7 +75,33 @@ const Testimonials = () => {
         Mira lo que dicen mis clientes
       </motion.p>
       <div className="w-full flex justify-center">
-        <AnimatedButton />
+        <AnimatedButton actualizarEstado={actualizarEstadoPadre} />
+        {showForm && (
+        <>
+          <div
+            className="fixed inset-0 bg-gray-800 opacity-50 z-40"
+            onClick={() => handleClick(false)}
+          ></div>
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+            <div className="bg-white p-4 rounded-lg shadow-lg">
+              <Registro actualizarEstado={actualizarEstadoPadre} actualizarEstadoAnswer={actualizarEstadoNo} />
+            </div>
+          </div>
+        </>
+      )}
+        {showRejection && (
+        <>
+          <div
+            className="fixed inset-0 bg-gray-800 opacity-50 z-40"
+            onClick={() => actualizarEstadoNo(false)}
+          ></div>
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+            <div className="bg-white p-4 rounded-lg shadow-lg">
+              <AnswerNo actualizarEstado={actualizarEstadoNo} />
+            </div>
+          </div>
+        </>
+      )}
       </div>
       <div className="container mx-auto flex justify-center items-center mt-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

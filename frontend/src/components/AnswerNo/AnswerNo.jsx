@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { logo } from "../../assets";
 
-
 const AnswerNo = ({ actualizarEstado }) => {
   const [registro, setRegistro] = useState({
     INVESTMENT: "",
@@ -34,13 +33,10 @@ const AnswerNo = ({ actualizarEstado }) => {
     e.preventDefault();
     validate(registro);
     if (Object.keys(errors).length === 0) {
-  
     } else {
       setFormSubmitted(true);
     }
   };
-
-  
 
   return (
     <div className="max-w-[1100px] flex items-center justify-center">
@@ -54,10 +50,14 @@ const AnswerNo = ({ actualizarEstado }) => {
         <div className="flex justify-center mb-2">
           <img src={logo} alt="Logo" className="w-40  p-0" />
         </div>
-<p className="text-gray-800 hanken-500 text-xl">Lamentablemente no estas calificado para pertenecer a la comunidad Fedeslab, Virgen</p>
+        <h1 className="montserrat-bold text-[#3a8139] ">Gracias por tu Interés en Fedeslab</h1>
+        <p className="text-gray-800 hanken-500 text-md">
+        Agradecemos sinceramente que hayas considerado a Fedeslab para impulsar tu negocio. Nuestro enfoque se centra en trabajar con empresas que ya cuentan con un nivel significativo de facturación, lo que nos permite maximizar nuestros recursos y estrategias para lograr un crecimiento exponencial.
 
-        <p className="text-xs text-gray-800 text-center mt-8 hanken-500">
-          &copy; 2024 Fedeslab
+        </p>
+
+        <p className="text-sm text-gray-800 text-center mt-8 hanken-500">
+           Gracias nuevamente por tu tiempo e interés. ¡Te deseamos mucho éxitos!
         </p>
       </div>
     </div>
