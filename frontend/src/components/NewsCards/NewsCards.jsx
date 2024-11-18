@@ -1,38 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { fede, fede2 } from "../../assets";
 import {newsData} from "../../utils/newsData"
-
-// const newsData = [
-//   {
-//     image: fede,
-//     category: "PRENSA",
-//     title: "Fedeslab resultados",
-//     additionalContent:
-//       "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
-//       slug: "caso-exito-cimes-agua-segura",
-//       link: "/novedades/caso-exito-cimes-agua-segura",
-
-//   },
-//   {
-//     image: fede2,
-//     category: "DESARROLLISMO",
-//     title: "Fedeslab resultados",
-//     additionalContent:
-//       "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
-//       slug: "apertura-reservas-bancos-2025",
-//       link: "/novedades/apertura-reservas-bancos-2025",
-//   },
-//   {
-//     image: fede,
-//     category: "DESARROLLISMO",
-//     title: "Fedeslab resultados",
-//     additionalContent:
-//       "CASO DE EXITO. Así es como aumente la facturación de este cliente en menos de 3 meses. Si tenes un producto o un servicio con hipótesis comprobada, no des mas vuelta y mejora tus resultados con el método correcto.",
-//       slug: "apertura-reservas-bancos-2025",
-//       link: "/novedades/apertura-reservas-bancos-2025",
-//   },
-// ];
 
 const NewsCards = () => {
   const refContainer = useRef(null);
@@ -63,7 +31,7 @@ const NewsCards = () => {
             transition={{ duration: 0.8, delay: index * 0.3 }} 
           >
             <img
-              src={news.image}
+              src={news.thumbnail}
               alt={news.title}
               className="w-full h-48 object-cover"
             />

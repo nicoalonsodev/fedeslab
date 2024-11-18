@@ -1,7 +1,9 @@
 import {
+  cimesThumb,
   cimes,
   cimes2,
   cimes3,
+  meta2Thumb,
   meta2,
   synagro,
   synagro2,
@@ -12,6 +14,7 @@ import {
 
 export const newsData = [
   {
+    thumbnail: meta2Thumb,
     image: meta2, // Reemplázalo con el asset correspondiente para este artículo
     category: "TENDENCIAS EN MARKETING",
     date: "17 noviembre, 2024",
@@ -41,6 +44,7 @@ export const newsData = [
   },
 
   {
+    thumbnail: cimesThumb,
     image: cimes,
     category: "CASO DE ÉXITO",
     date: "15 noviembre, 2024",
@@ -77,6 +81,7 @@ export const newsData = [
   },
 
   {
+    thumbnail: synagro,
     image: synagro, // Cambia esto al asset correspondiente para SynAgro
     category: "CASO DE ÉXITO",
     date: "17 noviembre, 2024",
