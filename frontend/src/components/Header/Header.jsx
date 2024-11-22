@@ -15,8 +15,15 @@ const Header = () => {
   const [currentPage, setCurrentPage] = useState(currentPath);
 
   const handleNavClick = (page) => {
+    // Redirigir a home si no estás en /
+    if (currentPath !== "/") {
+      setCurrentPage("/");
+      setMenuOpen(false); // Cierra el menú si está abierto
+      window.location.href = "/"; // Redirección a home
+      return;
+    }
     setCurrentPage(page);
-    setMenuOpen(false); // Close menu on nav click
+    setMenuOpen(false); // Cierra el menú en navegación
   };
 
   const handleScroll = () => {
@@ -50,16 +57,12 @@ const Header = () => {
         <div className="mx-auto flex items-center justify-between lg:hidden z-30 px-6 bg-[#3a8139]">
           <div className="logo flex items-center space-x-4">
             <a href="/">
-              <img
-                src={logo_blanco}
-                alt="Logo"
-                style={{ width: "100px" }}
-              />
+              <img src={logo_blanco} alt="Logo" style={{ width: "100px" }} />
             </a>
           </div>
           <HiMenuAlt2
             onClick={handleMenuToggle}
-            className={` ${
+            className={`${
               menuOpen ? "rotate-180" : ""
             } duration-700 text-gray-50 text-4xl inline-block md:hidden cursor-pointer z-30 `}
           />
@@ -83,6 +86,7 @@ const Header = () => {
             <div className="text-md poppins-semibold space-x-10">
               <a
                 href="#fedeslab"
+                onClick={() => handleNavClick("/proyectos")}
                 className={`${
                   currentPage === "/proyectos" ? "active" : "a-h"
                 } ${navbar ? "text-gray-700" : ""}`}
@@ -91,7 +95,7 @@ const Header = () => {
               </a>
               <a
                 href="#propuesta"
-                // onClick={() => handleNavClick("/sobre-nosotros")}
+                onClick={() => handleNavClick("/sobre-nosotros")}
                 className={`${
                   currentPage === "/sobre-nosotros" ? "active" : "a-h"
                 } ${navbar ? "text-gray-700" : ""}`}
@@ -110,14 +114,12 @@ const Header = () => {
               <a
                 href="#blog"
                 onClick={() => handleNavClick("/contacto")}
-                className={`${currentPage === "/contacto" ? "active" : "a-h"} ${
-                  navbar ? "text-gray-700" : ""
-                }`}
+                className={`${
+                  currentPage === "/contacto" ? "active" : "a-h"
+                } ${navbar ? "text-gray-700" : ""}`}
               >
                 Blog
               </a>
-
-              
             </div>
             <div
               className={`${
@@ -128,7 +130,7 @@ const Header = () => {
                 href="#contacto"
                 className=" flex items-center gap-x-2 poppins-regular"
               >
-              AGENDAR MI LLAMADA <IoIosContacts className="text-3xl" />
+                AGENDAR MI LLAMADA <IoIosContacts className="text-3xl" />
               </a>
             </div>
           </nav>
@@ -191,3 +193,4 @@ const Header = () => {
 };
 
 export default Header;
+
