@@ -22,6 +22,14 @@ import synagro2 from "./news/synagro2.webp";
 import synagro3 from "./news/synagro3.webp";
 import synagro4 from "./news/synagro4.webp";
 import synagro5 from "./news/synagro5.webp";
+import creativo from "./news/creativo.png";
+import creativo2 from "./news/creativo2.png";
+import plaza from "./news/cimes.png";
+import plaza2 from "./news/cimes.jpg";
+import cimesPage from "./news/cimespage.png";
+import cimesPage2 from "./news/cimespage2.png";
+import cimesResult from "./news/cimesresult.png"
+import hormozi from "./news/hormozi.png";
 export {
   logo,
   logo_blanco,
@@ -43,5 +51,13 @@ export {
   synagro4,
   synagro5,
   meta2Thumb,
-  cimesThumb
+  cimesThumb,
+  creativo,
+  creativo2,
+  plaza,
+  plaza2,
+  cimesPage,
+  cimesPage2,
+  cimesResult,
+  hormozi
 };

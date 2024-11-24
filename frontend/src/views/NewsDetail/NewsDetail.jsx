@@ -42,7 +42,7 @@ const NewsDetail = () => {
           <img
             src={news.image}
             alt={news.title}
-            className="w-full h-96 object-cover rounded-lg mb-4"
+            className="w-full h-auto object-cover rounded-lg mb-4"
           />
           <div className="flex justify-between items-center mb-2 text-left">
             <span className="text-gray-500">{news.date}</span>
