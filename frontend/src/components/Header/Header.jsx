@@ -57,7 +57,7 @@ const Header = () => {
         <div className="mx-auto flex items-center justify-between lg:hidden z-30 px-6 bg-[#3a8139]">
           <div className="logo flex items-center space-x-4">
             <a href="/">
-              <img src={logo_blanco} alt="Logo" style={{ width: "100px" }} />
+              <img src={logo_blanco} alt="Logo" style={{ width: "120px" }} />
             </a>
           </div>
           <HiMenuAlt2
