@@ -3,8 +3,6 @@ import { logo, logo_blanco } from "../../assets";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { IoIosContacts } from "react-icons/io";
-import { GiThreeLeaves } from "react-icons/gi";
 import "./Header.css";
 
 const Header = () => {
@@ -130,7 +128,7 @@ const Header = () => {
                 href="#contacto"
                 className=" flex items-center gap-x-2 poppins-regular"
               >
-                AGENDAR MI LLAMADA <IoIosContacts className="text-3xl" />
+                AGENDAR MI LLAMADA 
               </a>
             </div>
           </nav>
@@ -182,7 +180,7 @@ const Header = () => {
                 href="/"
                 className="tracking-widest poppins-regular bg-gray-50 hover:bg-gray-800 duration-300 text-[#3a8139] px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 "
               >
-                AGENDAR MI LLAMADA <IoIosContacts className="text-3xl" />
+                AGENDAR MI LLAMADA 
               </a>
             </div>
           </motion.div>
