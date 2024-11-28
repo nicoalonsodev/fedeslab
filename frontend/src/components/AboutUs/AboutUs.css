@@ -28,26 +28,13 @@
     }
   }
 
-  /* Animaciones */
-.fade-in {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
   
   .scale-in {
-    /* opacity: 0; */
-    transform: scale(0.9);
+     opacity: 0; 
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
   
   .scale-in.visible {
-    /* opacity: 1; */
-    transform: scale(1);
+     opacity: 1; 
   }
   
