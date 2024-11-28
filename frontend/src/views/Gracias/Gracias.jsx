@@ -16,14 +16,14 @@ const Gracias = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="relative w-full text-center text-white px-2 lg:px-52 mt-[90px] lg:-mt-20">
+        <div className="relative w-full text-center text-white px-2 lg:px-52 mt-[90px] lg:-mt-72">
           <h1 className="text-xl lg:text-4xl montserrat-bold uppercase my-2 lg:my-3 text-gray-600 text-balance">
             <span className="">
               ¡Gracias por Agendar una <br />Llamada con Fedeslab!
             </span>
           </h1>
           <p className="text-sm lg:text-2xl text-[#3a8139] leading-4 text-balance hanken-700-italic mb-4">
-            Estamos emocionados de analizar tu caso y ver si podemos trabajar
+            Estamos emocionados de analizar tu caso y ver si<br /> podemos trabajar
             juntos para impulsar tu negocio online.
           </p>
           {/* <div className="w-full flex justify-center items-center">
