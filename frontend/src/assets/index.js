@@ -24,8 +24,8 @@ import synagro4 from "./news/synagro4.webp";
 import synagro5 from "./news/synagro5.webp";
 import creativo from "./news/creativo.png";
 import creativo2 from "./news/creativo2.png";
-import plaza from "./news/cimes.png";
-import plaza2 from "./news/cimes.jpg";
+import plaza from "./news/plaza.png";
+import plaza2 from "./news/plazzza.png";
 import cimesPage from "./news/cimespage.png";
 import cimesPage2 from "./news/cimespage2.png";
 import cimesResult from "./news/cimesresult.png"
