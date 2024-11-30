@@ -50,10 +50,10 @@ const Registro = ({ actualizarEstado, actualizarEstadoAnswer }) => {
     actualizarEstado(false);
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
-      event: "MetaLead",
+      event: "MetaLeadEvent",
       eventCategory: "Lead",
       eventAction: "Submit",
-      eventLabel: registro.INVESTMENT,
+      eventLabel: "MetaLeadEvent",
     });
     window.open("https://calendly.com/federicopasquinimkt/30min", "_blank");
   };
