@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ReCAPTCHA } from "react-google-recaptcha";
 import { logo } from "../../assets";
 import "./Registro.css";
 
@@ -9,9 +10,12 @@ const Registro = ({ actualizarEstado, actualizarEstadoAnswer }) => {
 
   const [errors, setErrors] = useState({
     INVESTMENT: "Selecciona una opción",
+    captcha: "Completa el CAPTCHA",
   });
+
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState(null); // Almacena el valor del captcha
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,7 +31,15 @@ const Registro = ({ actualizarEstado, actualizarEstadoAnswer }) => {
     if (!registro.INVESTMENT) {
       errors.INVESTMENT = "Selecciona una opción";
     }
+    if (!captchaValue) {
+      errors.captcha = "Completa el CAPTCHA";
+    }
     setErrors(errors);
+  };
+
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+    setErrors((prevErrors) => ({ ...prevErrors, captcha: "" }));
   };
 
   const handleSubmit = (e) => {
@@ -37,8 +49,8 @@ const Registro = ({ actualizarEstado, actualizarEstadoAnswer }) => {
       if (registro.INVESTMENT === "Sí") {
         Submit();
       } else {
-        actualizarEstadoAnswer(true)
-        actualizarEstado(false)
+        actualizarEstadoAnswer(true);
+        actualizarEstado(false);
       }
     } else {
       setFormSubmitted(true);
@@ -104,6 +116,17 @@ const Registro = ({ actualizarEstado, actualizarEstadoAnswer }) => {
               <span className="hanken-300 text-red-500">
                 {errors.INVESTMENT}
               </span>
+            )}
+          </div>
+
+          <div className="flex items-center justify-center my-4">
+            <ReCAPTCHA
+              sitekey="6Ld7xJ8qAAAAAOUbmnv_KOhQLNtVUIgpFDAGeXiD" 
+              onChange={handleCaptchaChange}
+            />
+             <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld7xJ8qAAAAAOUbmnv_KOhQLNtVUIgpFDAGeXiD"></script>
+            {formSubmitted && errors.captcha && (
+              <span className="hanken-300 text-red-500">{errors.captcha}</span>
             )}
           </div>
 
