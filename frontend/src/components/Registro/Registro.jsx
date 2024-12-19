@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReCAPTCHA } from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 import { logo } from "../../assets";
 import "./Registro.css";
 
@@ -119,12 +119,12 @@ const Registro = ({ actualizarEstado, actualizarEstadoAnswer }) => {
             )}
           </div>
 
-          <div className="flex items-center justify-center my-4">
+          <div className="flex items-center justify-center my-4 ">
             <ReCAPTCHA
               sitekey="6Ld7xJ8qAAAAAOUbmnv_KOhQLNtVUIgpFDAGeXiD" 
               onChange={handleCaptchaChange}
             />
-             <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld7xJ8qAAAAAOUbmnv_KOhQLNtVUIgpFDAGeXiD"></script>
+             
             {formSubmitted && errors.captcha && (
               <span className="hanken-300 text-red-500">{errors.captcha}</span>
             )}
