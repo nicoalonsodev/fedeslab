@@ -119,14 +119,14 @@ const Registro = ({ actualizarEstado, actualizarEstadoAnswer }) => {
             )}
           </div>
 
-          <div className="flex items-center justify-center my-4 ">
+          <div className="flex flex-wrap items-center justify-center my-4 ">
             <ReCAPTCHA
               sitekey="6Ld7xJ8qAAAAAOUbmnv_KOhQLNtVUIgpFDAGeXiD" 
               onChange={handleCaptchaChange}
             />
              
             {formSubmitted && errors.captcha && (
-              <span className="hanken-300 text-red-500">{errors.captcha}</span>
+              <span className="w-full text-center hanken-300 text-red-500">{errors.captcha}</span>
             )}
           </div>
 
