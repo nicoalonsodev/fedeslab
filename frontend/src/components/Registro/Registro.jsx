@@ -121,7 +121,7 @@ const Registro = ({ actualizarEstado, actualizarEstadoAnswer }) => {
 
           <div className="flex flex-wrap items-center justify-center my-4 ">
             <ReCAPTCHA
-              sitekey="6Ld7xJ8qAAAAAOUbmnv_KOhQLNtVUIgpFDAGeXiD" 
+              sitekey="6LeNxJ8qAAAAAKm9FRAP6U_uv9W20g7giSqSYIn_" 
               onChange={handleCaptchaChange}
             />
              
