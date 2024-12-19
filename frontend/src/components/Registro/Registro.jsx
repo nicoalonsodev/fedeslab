@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 import { logo } from "../../assets";
 import "./Registro.css";
 
@@ -37,8 +37,8 @@ const Registro = ({ actualizarEstado, actualizarEstadoAnswer }) => {
     setErrors(errors);
   };
 
-  const handleCaptchaChange = (value) => {
-    setCaptchaValue(value);
+  const handleCaptchaVerify = (token) => {
+    setCaptchaValue(token);
     setErrors((prevErrors) => ({ ...prevErrors, captcha: "" }));
   };
 
@@ -119,18 +119,19 @@ const Registro = ({ actualizarEstado, actualizarEstadoAnswer }) => {
             )}
           </div>
 
-          <div className="flex flex-wrap items-center justify-center my-4 ">
-            <ReCAPTCHA
-              sitekey="6LeNxJ8qAAAAAKm9FRAP6U_uv9W20g7giSqSYIn_" 
-              onChange={handleCaptchaChange}
+          <div className="flex flex-wrap items-center justify-center my-4">
+            <HCaptcha
+              sitekey="ae42ed4c-ec58-4eb4-a83a-ccd0ada07b86" // Reemplaza con tu site key de hCaptcha
+              onVerify={handleCaptchaVerify}
             />
-             
             {formSubmitted && errors.captcha && (
-              <span className="w-full text-center hanken-300 text-red-500">{errors.captcha}</span>
+              <span className="w-full text-center hanken-300 text-red-500">
+                {errors.captcha}
+              </span>
             )}
           </div>
 
-          <div className="flex items-center justify-center py-4 ">
+          <div className="flex items-center justify-center py-4">
             {isLoading ? (
               <img
                 src={logo}
