@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HCaptcha from "@hcaptcha/react-hcaptcha";
+import { Turnstile } from "@marsidev/react-turnstile"; // Importa Turnstile
 import { logo } from "../../assets";
 import "./Registro.css";
 
@@ -120,9 +120,9 @@ const Registro = ({ actualizarEstado, actualizarEstadoAnswer }) => {
           </div>
 
           <div className="flex flex-wrap items-center justify-center my-4">
-            <HCaptcha
-              sitekey="ae42ed4c-ec58-4eb4-a83a-ccd0ada07b86" // Reemplaza con tu site key de hCaptcha
-              onVerify={handleCaptchaVerify}
+            <Turnstile
+              siteKey="0x4AAAAAAA3GTXV2WFN_Y1ia" 
+              onSuccess={handleCaptchaVerify}
             />
             {formSubmitted && errors.captcha && (
               <span className="w-full text-center hanken-300 text-red-500">
